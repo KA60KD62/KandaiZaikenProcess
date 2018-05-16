@@ -1,0 +1,122 @@
+/*隙間回避*/
+html,body{margin:0;padding:0;}
+/*全体*/
+body{
+    background:gray;
+}
+/*header*/
+header{
+    overflow: hidden;/*floatによる親の収縮の解除*/
+    background: #1e1eff;
+    position: fixed; /* ヘッダーを固定*/
+    top: 0; /* 固定する位置 */
+    left: 0; /* 固定する位置 */
+    right: 0;  /* 固定する位置 */
+    z-index:10;/*最前面*/
+    border-bottom:1.5px solid gray;
+}
+.header-left-name-logo{
+    float: left;
+    font-size:3.4vmax;
+    padding:1vmax 0 0.8vmax 1.4vmax;
+    color: aliceblue;
+}
+.header-menu{
+    float:right;
+    font-size:3.8vmax;
+    padding:0.8vmax 2.2vmax 0 0;
+    cursor: pointer;
+    display: block;
+    color:aliceblue;
+}
+.clear {
+    clear:both;　/*floatの解除*/
+}
+/*メニューモーダル*/
+.menu{
+    display: none;
+    position: fixed;
+    width: 28vmax;
+    height: auto;
+    border: 0.3rem solid #2c2f98;
+    background-color: whitesmoke;
+    z-index: 100;  
+    top:5%;/*座標調整*/
+    left: 50%;/*座標調整*/
+    transform: translate(-50%,0);/*座標調整*/
+    padding-top: 2vmax;   
+}
+.close-menu{
+    padding-bottom: 1rem;
+    border-top:solid 0.3rem #2c2f98;
+    font-size:150%;
+    padding-top:1rem;
+    display:block;
+    color:#2c2f98;
+}
+.link{
+    display:block;
+    font-family: 'Passion One', cursive;
+    font-size:150%;
+    color:#2c2f98;
+}
+.menu-lists{
+    text-align: center;
+}
+.menu-list p{
+    border-top:solid 0.3rem #2c2f98;
+    padding-top:1rem;
+}
+.menu-list {
+    display:block;
+}
+.menu-list a{
+    text-decoration:none;
+}
+.a-menu-title{
+    font-size:180%;
+    font-family: 'Passion One', cursive;
+    color:#2c2f98;
+}
+/*見出し*/
+.n-headline{
+    margin-top:-1vmax;
+    height:25vmax;
+    background-image:url(../img/contact/contact.jpg);
+    background-size:cover;/*比を保つ*/
+}
+.n-headline p{
+    text-align: center;
+    color:aliceblue;
+    font-size:6.5vmax;
+    position: relative;
+    top:28%;
+}
+/*中身*/
+.n-container{
+    margin-top: 2vmax;
+    text-align: center;
+    font-size: 2vmax;
+}
+.n-title{
+    font-size:3vmax;
+    padding-bottom:2vmax;
+    color:blue;
+}
+/*footer*/
+.footer-name-logo{
+    font-size:80%;
+} 
+.footer-message{
+    font-size: 70%;
+}
+footer{
+    background:#000082;
+    width:100%;
+    height: 100%;
+    color:aliceblue;
+}
+.footer{
+    padding:0.5vmax;
+    border-top:1.3px solid black;
+}

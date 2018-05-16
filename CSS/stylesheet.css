@@ -1,0 +1,328 @@
+html,body{margin:0;padding:0;}
+/*全体*/
+body{
+    background:dimgray;
+}
+/*header*/
+header{
+    overflow: hidden;/*floatによる親の収縮の解除*/
+    background: silver;
+    position: fixed; /* ヘッダーを固定*/
+    top: 0; /* 固定する位置 */
+    left: 0; /* 固定する位置 */
+    right: 0;  /* 固定する位置 */
+    z-index:10;/*最前面*/
+    border-bottom:1.5px solid black;
+}
+.header-left-name-logo{
+    float: left;
+    font-size:3.4vmax;
+    padding:1vmax 0 0.8vmax 1.4vmax;
+    color: black;
+}
+.header-menu{
+    float:right;
+    font-size:3.8vmax;
+    padding:0.8vmax 2.2vmax 0 0;
+    cursor: pointer;
+    display: block;
+}
+.clear {
+    clear:both;　/*floatの解除*/
+}
+/*メニューモーダル*/
+.menu{
+    display: none;
+    position: fixed;
+    width: 28vmax;
+    height: auto;
+    border: 0.3rem solid aliceblue;
+    background-color: dimgray;
+    z-index: 100;  
+    top:5%;/*座標調整*/
+    left: 50%;/*座標調整*/
+    transform: translate(-50%,0);/*座標調整*/
+    padding-top: 2vmax;   
+}
+.close-menu{
+    padding-bottom: 1rem;
+    border-top:solid 0.3rem aliceblue;
+    font-size:150%;
+    padding-top:1rem;
+    display:block;
+    color:aliceblue;
+}
+.link{
+    display:block;
+    font-family: 'Passion One', cursive;
+    font-size:150%;
+    color:aliceblue
+}
+.menu-lists{
+    text-align: center;
+}
+.menu-list p{
+    border-top:solid 0.3rem aliceblue;
+    padding-top:1rem;
+}
+.menu-list {
+    display:block;
+}
+.menu-list a{
+    text-decoration:none;
+}
+.m-menu-title{
+    font-size:180%;
+    font-family: 'Passion One', cursive;
+    color:aliceblue;
+}
+/*見出し*/
+.i-headline{
+    margin-top:-1vmax;
+    height:25vmax;
+    background-image:url(../img/index/m_heading.jpg);
+    background-size:cover;/*比を保つ*/
+}
+.i-headline p{
+    text-align: center;
+    color:aliceblue;
+    font-size:3.7vmax;
+    position: relative;
+    top:35%;
+}
+.i-heading-comment p{
+    text-align: center;
+    color:aliceblue;
+    font-size:2.2vmax;
+    position: relative;
+    top:35%;
+}
+/*中身------------------------------------------------------------------------------*/
+/*内容*/
+.container {
+  width: 1oo%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.lesson-wrapper {
+  height: 100%;
+  padding-bottom: 80px;
+  background-color: #F0F1F2;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+.heading h2 {
+  font-weight: normal;
+}
+.lesson {
+  float: left;
+  width: 25%;
+}
+.lesson-icon {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.lesson-icon p {
+  position: absolute;
+  width: 100%;
+  margin-top:20px;
+  font-family:'Yu Gothic';
+  font-size:2vmax;
+  font-weight:bolder;
+  color: white;
+  text-align: center;
+  background:center;
+}
+.index-image{
+  margin:0 10% 0 10%;
+  width:80%;
+  height:80%;
+}
+.text-contents {
+  margin: 3% auto;
+  width: 80%;
+  font-size: 1vmax;
+  color: white;
+  text-align: center;
+}
+/*faq---------------------------------------------------------------------------------------*/
+.heading-faq {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+.heading-faq h2 {
+  font-weight: normal;
+}
+.faq-wrapper {
+  background-color: silver;
+  text-align: center;
+  padding-bottom: 80px;
+  color: dimgray;  
+  border-top:1.5px solid black;
+  border-bottom:1.5px solid black;
+}
+#faq-list {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.faq-list-item {
+  margin:10px;
+  border-bottom:1px solid dimgray;
+  position:relative;
+  cursor:pointer;
+  text-align: center;
+}
+.faq-list-item h3 {
+  font-size: 17px;
+  text-align: center;
+}
+.faq-list-item span {
+  position:absolute;
+  top:-3px;
+  right:3%;
+  color: #5f5d60;
+  font-size:120%;
+}
+.answer {
+  font-size: 17px;
+  display: none;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+  color:dimgray;
+  font-weight:bold;
+}
+/*リンク------------------------------------------------------------------------------------*/
+.member-btn {
+  padding: 8px 24px;
+  color: black;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+  color:dimgray;
+  font-size:2.2vmax;
+}
+#link-font{
+  color:aliceblue;
+  font-size:2.2vmax;
+}
+/*メッセージ全体*/
+.container-message {
+  width: 1oo%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.heading-message h2 {
+  font-weight: normal;
+}
+/*メッセージ区間全体*/
+.message-wrapper {
+  padding-bottom: 80px;
+  text-align: center;
+}
+/*ボタン*/
+.member-message {
+  padding: 15px 0;
+  background-color: yellow;
+  cursor: pointer;
+  box-shadow: 0px 7px gold;
+}
+.member-message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/*footer--------------------------------------------------*/
+.footer-name-logo{
+    font-size:80%;
+} 
+.footer-message{
+    font-size: 70%;
+}
+footer{
+    background:silver;
+    width:100%;
+    height: 100%;
+}
+.footer{
+    padding:0.5vmax;
+    border-top:1.3px solid black;
+}
+/*レスポンシブ------------------------------------------------------*/
+@media all and (max-width: 1000px) {
+/*見出し*/
+    .i-headline p{
+        font-size: 3.2vmax;
+        
+    }
+/*内容*/
+    .lesson{
+        width:100%;
+    }
+    .index-image{
+      margin:0 20% 0 20%;
+      width:60%;
+      height:60%;
+    }
+
+    .text-contents{
+        font-size: 2vmax;
+        margin-top:0;
+        text-align: center;
+        margin-bottom:2rem;
+    }
+    .lesson-icon p {
+        margin-top:10px;
+    }
+    .lesson {
+      float: none;
+    }
+    .index-image{
+      width:45%;
+      height:45%;
+      margin:0 27.5%;
+    } 
+/*faq-------*/
+    .faq-list-item h3 {
+      font-size: 1.7vmax;
+      text-align: center;
+    }
+    .answer {
+      font-size: 1.7vmax;
+    }
+    .faq-list-item span {
+      font-size:3vmax;
+    }
+/*btn*/
+    .member-btn {
+      font-size:2.3vmax;
+    }
+    #link-font{
+      font-size:1.8vmax;
+    }
+}    
+/*共通body-----------------------------------------------------------*/
+  body{
+    overflow: scroll;
+  }
+
+
+@media all and (min-width: 1000px) {
+  padding:15px 15px ;
+}
+
+
+
+
+
+
